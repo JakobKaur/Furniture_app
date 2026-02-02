@@ -1,0 +1,36 @@
+import { StyleSheet } from "react-native";
+import { colors } from "../../constants/colors";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: colors.white,
+  },
+  image: {
+    width: "100%",
+    height: 200,
+  },
+  titleContainer: {
+    marginVertical: 54,
+  },
+  title: {
+    fontSize: 40,
+    fontWeight: "700",
+    textAlign: "center",
+    color: colors.black,
+  },
+  innerTitle: {
+    color: colors.orange,
+    textDecorationLine: "underline",
+  },
+  footerText: {
+    color: colors.blue,
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "700",
+    marginTop: 30,
+  },
+});
