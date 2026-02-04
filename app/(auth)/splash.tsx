@@ -1,6 +1,7 @@
-import { Button } from "@/components/Button";
+import { router } from "expo-router";
 import React from "react";
 import { Image, Pressable, Text, View } from "react-native";
+import Button from "../../components/Button";
 import { styles } from "./splash.styles";
 
 export default function Splash() {
@@ -17,13 +18,11 @@ export default function Splash() {
         <Text style={styles.title}>Here!</Text>
       </View>
 
-      <Button title="Sign Up" onPress={() => console.log("Sign Up")} />
+      <Button title="Sign Up" onPress={() => router.push("/(auth)/signup")} />
 
-      <Pressable hitSlop={10} onPress={() => console.log("Sign In")}>
+      <Pressable hitSlop={10} onPress={() => router.push("/(auth)/sign-in")}>
         <Text style={styles.footerText}>Sign In</Text>
       </Pressable>
-
-      {/* Nupud lisame töölehe 2 käigus */}
     </View>
   );
 }
